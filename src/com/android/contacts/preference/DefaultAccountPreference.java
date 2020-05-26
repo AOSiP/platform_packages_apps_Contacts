@@ -25,7 +25,6 @@ import android.view.View;
 
 import com.android.contacts.model.account.AccountInfo;
 import com.android.contacts.model.account.AccountWithDataSet;
-import com.android.contacts.R;
 import com.android.contacts.util.AccountsListAdapter;
 
 import java.util.List;
@@ -88,7 +87,6 @@ public class DefaultAccountPreference extends DialogPreference {
     protected void onPrepareDialogBuilder(AlertDialog.Builder builder) {
         super.onPrepareDialogBuilder(builder);
         // UX recommendation is not to show buttons on such lists.
-        builder.getContext().setTheme(R.style.ContactsAlertDialogTheme);
         builder.setNegativeButton(null, null);
         builder.setPositiveButton(null, null);
         builder.setAdapter(mListAdapter, new DialogInterface.OnClickListener() {

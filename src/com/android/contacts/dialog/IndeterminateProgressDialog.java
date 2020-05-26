@@ -24,9 +24,6 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.android.contacts.R;
-
-
 /**
  * Indeterminate progress dialog wrapped up in a DialogFragment to work even when the device
  * orientation is changed. Currently, only supports adding a title and/or message to the progress
@@ -90,8 +87,7 @@ public class IndeterminateProgressDialog extends DialogFragment {
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         // Create the progress dialog and set its properties
-        final ProgressDialog dialog = new ProgressDialog(getActivity()
-                , R.style.ContactsAlertDialogTheme);
+        final ProgressDialog dialog = new ProgressDialog(getActivity());
         dialog.setIndeterminate(true);
         dialog.setIndeterminateDrawable(null);
         dialog.setTitle(mTitle);

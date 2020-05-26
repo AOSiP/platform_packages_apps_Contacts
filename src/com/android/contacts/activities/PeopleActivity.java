@@ -1034,7 +1034,7 @@ public class PeopleActivity extends AppCompatContactsActivity implements
     private void resetToolBarStatusBarColor() {
         findViewById(R.id.toolbar_frame).setBackgroundColor(
                 ContextCompat.getColor(this, R.color.primary_color));
-        updateStatusBarBackground(ContextCompat.getColor(this, R.color.primary_color));
+        updateStatusBarBackground(ContextCompat.getColor(this, R.color.primary_color_dark));
     }
 
     protected DefaultContactBrowseListFragment getListFragment() {

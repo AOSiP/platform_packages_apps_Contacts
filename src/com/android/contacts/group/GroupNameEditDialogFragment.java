@@ -120,7 +120,7 @@ public final class GroupNameEditDialogFragment extends DialogFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setStyle(STYLE_NORMAL, R.style.ContactsAlertDialogTheme);
+        setStyle(STYLE_NORMAL, R.style.ContactsAlertDialogThemeAppCompat);
         final Bundle args = getArguments();
         if (savedInstanceState == null) {
             mGroupName = args.getString(KEY_GROUP_NAME);
