@@ -176,8 +176,7 @@ public class PickRawContactDialogFragment extends DialogFragment {
             throw new IllegalArgumentException("Dialog created with null RawContactsMetadata");
         }
 
-        final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity()
-                , R.style.ContactsAlertDialogTheme);
+        final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         mAdapter = new RawContactAccountListAdapter(getContext(), metadata);
         if (metadata.showReadOnly) {
             builder.setTitle(R.string.contact_editor_pick_linked_contact_dialog_title);

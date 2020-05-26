@@ -1028,10 +1028,9 @@ public class DefaultContactBrowseListFragment extends ContactBrowseListFragment
         // Light tint the icons for normal mode, dark tint for search or selection mode.
         for (int i = 0; i < menu.size(); ++i) {
             final Drawable icon = menu.getItem(i).getIcon();
-            if (icon != null) {
+            if (icon != null && !isSearchOrSelectionMode) {
                 icon.mutate().setColorFilter(ContextCompat.getColor(getContext(),
-                        !isSearchOrSelectionMode ? R.color.actionbar_icon_color :
-                        R.color.actionbar_icon_color_grey), PorterDuff.Mode.SRC_ATOP);
+                        R.color.actionbar_icon_color), PorterDuff.Mode.SRC_ATOP);
             }
         }
     }

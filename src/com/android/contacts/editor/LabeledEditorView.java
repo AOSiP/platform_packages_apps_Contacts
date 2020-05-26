@@ -628,7 +628,7 @@ public abstract class LabeledEditorView extends LinearLayout implements Editor, 
         public View getDropDownView(int position, View convertView, ViewGroup parent) {
             final CheckedTextView dropDownView = (CheckedTextView) createViewFromResource(
                     position, convertView, parent, android.R.layout.simple_spinner_dropdown_item);
-            dropDownView.setBackgroundColor(getResources().getColor(R.color.navigation_drawer_background_color));
+            dropDownView.setBackground(getContext().getDrawable(R.drawable.drawer_item_background));
             dropDownView.setChecked(position == mSelectedIndex);
             return dropDownView;
         }

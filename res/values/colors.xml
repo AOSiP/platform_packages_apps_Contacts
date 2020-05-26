@@ -69,6 +69,9 @@
     <!-- Background color of pinned header items. -->
     <color name="list_item_pinned_header_color">@color/background_primary</color>
 
+    <!-- Color of the mime-type icons inside the editor. 50% black. -->
+    <color name="editor_icon_color">#7f7f7f</color>
+
     <!-- Color of disabled text and unfocused hint text inside the contact editor. 25% black. -->
     <color name="editor_disabled_text_color">#40000000</color>
 
@@ -99,7 +102,7 @@
     <color name="secondary_text_color">@color/dialtacts_secondary_text_color</color>
 
     <!-- Text color for section header. -->
-    <color name="section_header_text_color">@color/primary_text_color</color>
+    <color name="section_header_text_color">@color/dialtacts_theme_color</color>
 
     <!-- Color of the theme of the People app -->
     <color name="people_app_theme_color">#363636</color>
